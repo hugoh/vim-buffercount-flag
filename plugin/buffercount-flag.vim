@@ -27,7 +27,7 @@ let g:buffercount_flag_format = get(g:, 'buffercount_flag_format', '[B:%d]')
 
 ""
 " Minimum number of visible buffers to show the flag. If the count is lower,
-" nothing will be shown
+" nothing will be shown. Default is 1.
 let g:buffercount_flag_mincount = get(g:, 'buffercount_flag_mincount', 1)
 
 

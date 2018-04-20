@@ -33,7 +33,7 @@ Display format, with %d indicating the visible buffer count. Default: '[B:%d]'
 
                                                  *g:buffercount_flag_mincount*
 Minimum number of visible buffers to show the flag. If the count is lower,
-nothing will be shown
+nothing will be shown. Default is 1.
 
 
 vim:tw=78:ts=8:ft=help:norl:
