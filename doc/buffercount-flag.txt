@@ -1,0 +1,39 @@
+*buffercount-flag.txt*	Tiny Vim buffer count flag
+Hugo Haas <hugoh@hugoh.net>                                 *buffercount-flag*
+
+==============================================================================
+CONTENTS                                           *buffercount-flag-contents*
+  1. Introduction.....................................|buffercount-flag-intro|
+  2. Configuration...................................|buffercount-flag-config|
+
+==============================================================================
+INTRODUCTION                                          *buffercount-flag-intro*
+
+This plugin offers a very simple buffer count indicator that one can add to
+their status line, tab line, etc.
+
+If |flagship| is installed, |BufferCountFlag| will be automatically included
+in the window display.
+
+Calling the `BufferCountFlag()` function returns the flag. You can for example
+add the following to your statusline:
+>
+  %{BufferCountFlag()}
+<
+If you have |flagship| installed, the following is invoked automatically:
+>
+  autocmd User Flags call Hoist('window', 10, 'BufferCountFlag')
+<
+
+==============================================================================
+CONFIGURATION                                        *buffercount-flag-config*
+
+                                                   *g:buffercount_flag_format*
+Display format, with %d indicating the visible buffer count. Default: '[B:%d]'
+
+                                                 *g:buffercount_flag_mincount*
+Minimum number of visible buffers to show the flag. If the count is lower,
+nothing will be shown
+
+
+vim:tw=78:ts=8:ft=help:norl:

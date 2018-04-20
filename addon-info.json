@@ -1,0 +1,7 @@
+{
+  "name": "buffercount-flag",
+  "description": "Tiny Vim buffer count flag",
+  "author": "Hugo Haas <hugoh@hugoh.net>",
+  "repository": {"type": "git", "url": "git://gitlab.com/hugoh/vim-buffercount-flag"}
+}
+
